@@ -28,23 +28,29 @@ Validated GPU stack: **Linux, NVIDIA L4 (SM89), Python 3.11.15,
 PyTorch 2.7.1+cu128, Triton 3.3.1**. Other GPUs and newer framework versions have
 not been validated. CPU-only installation supports metadata and CSV tooling.
 
-```bash
-git clone https://github.com/tlstngud/TriFusion-FP-Kernel.git
-cd TriFusion-FP-Kernel
+The package is available on [PyPI](https://pypi.org/project/trifusion-fp-kernel/).
+For the base package:
 
+```bash
+python -m pip install trifusion-fp-kernel==0.1.0
+```
+
+For GPU inference:
+
+```bash
 # Install the tested CUDA build in a dedicated environment.
 python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-python -m pip install '.[l4]'
+python -m pip install 'trifusion-fp-kernel[l4]==0.1.0'
 trifusion-l4 info
 ```
 
 If the correct CUDA PyTorch build is already installed, start with the second
 installation command. The `l4` extra pins the tested framework versions. The
-base package (`pip install .`) does not install or replace PyTorch.
+base package does not install or replace PyTorch. To develop from source, clone
+this repository and install `.[dev]` or `.[l4]` in its root directory.
 
 Pretrained checkpoints and audio datasets are not included. Supply your own
 compatible `model` + `model_config` checkpoint as described in [the API guide](docs/api.md).
-This project is installable from GitHub; it has not been published to PyPI.
 
 ## Tensor API
 

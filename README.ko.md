@@ -19,18 +19,25 @@ Python 호출 비용은 CUDA Graph로 줄였습니다. 이 버전은 **추론 �
 실측 환경은 Linux / NVIDIA L4(SM89) / Python 3.11.15 /
 PyTorch 2.7.1+cu128 / Triton 3.3.1입니다.
 
+[PyPI](https://pypi.org/project/trifusion-fp-kernel/)에서 기본 패키지를 설치할 수 있습니다.
+
 ```bash
-git clone https://github.com/tlstngud/TriFusion-FP-Kernel.git
-cd TriFusion-FP-Kernel
+python -m pip install trifusion-fp-kernel==0.1.0
+```
+
+GPU 추론용 설치:
+
+```bash
 python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-python -m pip install '.[l4]'
+python -m pip install 'trifusion-fp-kernel[l4]==0.1.0'
 trifusion-l4 info
 trifusion-l4 predict --weights /path/to/model.pt --root /path/to/work
 ```
 
-기본 패키지(`pip install .`)는 PyTorch를 설치하지 않습니다. GPU 추론은
+기본 패키지는 PyTorch를 설치하지 않습니다. GPU 추론은
 검증한 버전을 지정한 `l4` extra로 설치합니다. 모델 가중치와 오디오 데이터는
 포함하지 않으므로 호환되는 체크포인트를 직접 준비해야 합니다.
+소스 개발 시에는 저장소를 clone한 뒤 루트에서 `.[dev]` 또는 `.[l4]`를 설치합니다.
 
 ```python
 from trifusion_l4 import configure_runtime, load_student, InferenceEngine
@@ -43,8 +50,7 @@ engine.clear()
 ```
 
 [체크포인트·텐서 입력 형식](docs/api.md), [벤치마크와 검증 범위](docs/benchmarks.md),
-[전체 설명](README.md)을 확인할 수 있습니다. GitHub에서 설치할 수 있으며
-PyPI에는 아직 배포하지 않았습니다.
+[전체 설명](README.md)을 확인할 수 있습니다.
 
 기존 L4 실측에서 동일 GPU 기준 구현 대비 약 1.9~4.8배 향상했습니다
 (입력/배치별 차이). 이 수치는 공개 패키지로 정리하기 전의 비공개 가중치와
