@@ -1,0 +1,2 @@
+# Keep the pinned upstream files byte-for-byte, including upstream whitespace.
+src/trifusion_l4/vendor/** -whitespace
