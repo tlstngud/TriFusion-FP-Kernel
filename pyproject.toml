@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trifusion-fp-kernel"
+version = "0.1.0"
+description = "TriFusion-FP inference kernels and CUDA Graph runtime for NVIDIA L4"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "TriFusion-FP contributors"}]
+keywords = ["audio", "mamba", "triton", "cuda", "l4", "inference"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+l4 = [
+    "torch==2.7.1",
+    "triton==3.3.1",
+    "einops==0.8.1",
+    "numpy==1.26.4",
+    "scipy==1.15.3",
+    "soundfile==0.12.1",
+]
+dev = ["pytest>=8,<10", "build>=1.2", "twine>=6,<8", "ruff==0.16.7"]
+
+[project.urls]
+Homepage = "https://github.com/tlstngud/TriFusion-FP-Kernel"
+Repository = "https://github.com/tlstngud/TriFusion-FP-Kernel"
+Issues = "https://github.com/tlstngud/TriFusion-FP-Kernel/issues"
+
+[project.scripts]
+trifusion-l4 = "trifusion_l4.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"trifusion_l4.vendor" = ["LICENSE", "UPSTREAM.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gpu: requires an NVIDIA L4 with the validated CUDA/PyTorch/Triton stack"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["src/trifusion_l4/vendor"]
+
+[tool.ruff.lint]
+select = ["F821", "F822", "F823"]

@@ -1,0 +1,7 @@
+TriFusion-FP-Kernel
+Copyright 2026 TriFusion-FP contributors
+
+This product includes software developed by Dao AI Lab and Goombalab.
+Mamba-3 source files and derived kernels retain their upstream notices and
+are distributed under the Apache License, Version 2.0.
+See THIRD_PARTY_NOTICES.md and src/trifusion_l4/vendor/UPSTREAM.json.

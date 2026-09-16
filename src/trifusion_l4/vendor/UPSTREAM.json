@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/state-spaces/mamba",
+  "revision": "e9594ce1c732d97440f0332fdc43170a2294dbfa",
+  "files": [
+    {
+      "vendored_file": "LICENSE",
+      "upstream_path": "LICENSE",
+      "git_blob_sha1": "f4abe24eb520fbb077753ae4f34bfaa43cb3b83f",
+      "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+      "modified": false
+    },
+    {
+      "vendored_file": "angle_dt.py",
+      "upstream_path": "mamba_ssm/ops/triton/mamba3/angle_dt.py",
+      "git_blob_sha1": "5363efaa255b8558cb79ddb685ec9a985584aa34",
+      "sha256": "7d99f8cff37371cfbfe9d4dd36f17a16135fb07f2c6e14add3ad4dd5c0034e2e",
+      "modified": false
+    },
+    {
+      "vendored_file": "mamba3_siso_fwd.py",
+      "upstream_path": "mamba_ssm/ops/triton/mamba3/mamba3_siso_fwd.py",
+      "git_blob_sha1": "041db8eb4c24ef83494a48cbc0f108e2ec6ef74e",
+      "sha256": "bfcf75d9192e0f90ca543eb33a5b5f2b50d92ad2a60f2d5bfab1dc7081b4da33",
+      "modified": false
+    },
+    {
+      "vendored_file": "utils.py",
+      "upstream_path": "mamba_ssm/ops/triton/mamba3/utils.py",
+      "git_blob_sha1": "19676c76b7f2b1d34536810e2568acb3325dd526",
+      "sha256": "9d93fd772c7f256f517e75445261773e469cfeddb8bb76c1f8f16e9feabb3c13",
+      "modified": false
+    }
+  ]
+}

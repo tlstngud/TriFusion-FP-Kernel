@@ -1,0 +1,7 @@
+include LICENSE NOTICE THIRD_PARTY_NOTICES.md
+include README.md README.ko.md CHANGELOG.md CONTRIBUTING.md
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include benchmarks *.py *.json
+recursive-include tests *.py
+recursive-exclude * __pycache__ *.pyc

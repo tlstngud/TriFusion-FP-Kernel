@@ -1,0 +1,131 @@
+{
+  "method": "Python AST comparison ignoring docstrings and locations; kernel/runtime equations unchanged",
+  "files": [
+    {
+      "file": "trifusion_l4/angle.py",
+      "validated_source_sha256": "8e551d8c02d73b613cf27ca081805fd314f0ff2a0ab431956e9335623ce577c6",
+      "public_source_sha256": "859265ba177ac8956bc0ea163a0446099e3484b4a8ccc2bff604ccbc4ed67441",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/attention.py",
+      "validated_source_sha256": "3647732abd786cdc1175c7e6ac2a6b5f5812561d7d6272313043fd71a731cf29",
+      "public_source_sha256": "4e796a474d36ab5824cae10eca75cd3ef6b32993bce9c1e8430a6b1233be3b7d",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/audio.py",
+      "validated_source_sha256": "97c9f4f3fc33fe10caa930fa1c76be1b24e761e8d7879ab8a1849bc7dbbe0608",
+      "public_source_sha256": "c63fa16b359da789c5a100ec68262d11ef85621209309c143abd4b8af9222e21",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/decoder.py",
+      "validated_source_sha256": "6291798e98f6d69cc646811a68061de8b8625eaadbd268895e2aaa959beae5f0",
+      "public_source_sha256": "b4d65fb5695d564d5ff22655d363e43d848fbabf9efdefc5a1e3057d3de7ac86",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/front.py",
+      "validated_source_sha256": "b1d65f36e9cc8da11a71b65ac2c9857b0f47e183e226d663115cf83153ef43cf",
+      "public_source_sha256": "2ee499dcbb13e3bc454e60653fc5d39ea5f38f4be555dac5d30826a29ad87974",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/kernels/__init__.py",
+      "validated_source_sha256": "2f068fa2b2861b05c1c1726022982d6d79024c893d4039c8bcaa0c19e8510b6c",
+      "public_source_sha256": "8b4972896a98d431281ee52990d5b0506d7cac8b03385720b2b334df6467c666",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/kernels/buffers.py",
+      "validated_source_sha256": "f469793e7e1d6e7386f9b9f243e404a6c1a2dfce29bdf2eea8f11b31881afcf6",
+      "public_source_sha256": "fca43821a5040e1d3c01c83805314746860d6e89db014ba046c1769113229983",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/kernels/native.py",
+      "validated_source_sha256": "4957610e8a124b2177e1a81d684d2e9e5c309045d8ece9fed4ce12d1ea609498",
+      "public_source_sha256": "9f1c4465c1250528ea2449dd96a6eadfd8703c9d24eb4de9430d13a777b99414",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/kernels/primitives.py",
+      "validated_source_sha256": "5103df03b9ed06499ac43b1c1d92108e915b3197e99518aaaf38a73c42481a2f",
+      "public_source_sha256": "5bfff6b913ca4aa10510798ed4a376d0cfefeb4392fe4dd9b53bec0e549ec2cb",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/mamba.py",
+      "validated_source_sha256": "37d5f77b36efd7506ba312fd8355d1ae9643683cee0201a4b40acec6746d8331",
+      "public_source_sha256": "ed0879a34f8b0593217bcb3f7d0b7e2bd9f62ab017afa0f87f23bd2b8a3e2ecb",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/mamba_fused.py",
+      "validated_source_sha256": "b76d3445262438f423a165e1f76e80e630c6150636c87253770371a586b7c1c0",
+      "public_source_sha256": "da08efbb3cf43ba9ba6adc763a99d5d409bd29dcf3fead6e8f25a4aad9ed089b",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/mamba_portable.py",
+      "validated_source_sha256": "0425abc9018f6fb4139e9ff49c85a205e4a3aa3e7fc1bdcdee153f993687d3b0",
+      "public_source_sha256": "d7313a11d8cdee0d70b9502416f874c7527a45aefdb5db58418cde5ad836adb6",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/masking.py",
+      "validated_source_sha256": "338e321d64f2cf51811495af384dec37283647391e641c2ddf97e8f2d4144cc4",
+      "public_source_sha256": "acda0833a2aad9303ddc31f9364c820d59814a69048a65c4c0ddc9991d3a0e64",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/model.py",
+      "validated_source_sha256": "f7c0ab2903a81f08b288ce00c31811627c39dc01ca1da6857a7b45106ed940b7",
+      "public_source_sha256": "14c58592cac580a0a05c8a228f948e9ea06e6eaa0e92bc8f1b1a16df73e22ee0",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/runtime.py",
+      "validated_source_sha256": "262242f5936a9e40acdb9ee18188efb2fcc550dfe2a8b515c59d94a470ac1d91",
+      "public_source_sha256": "8b3800d906d9e5dcd814dfad9d0da0eee3692585efc4d266878d892fe1ea9b11",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/submission.py",
+      "validated_source_sha256": "78a02726d3ffb5279eaf752e17056b35f52d389ab261e170d8017166a739a0dc",
+      "public_source_sha256": "246317a1715cfa90b637b79be60f9a466058162a1fb7239331dcdcf5bd05e329",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/submission_format.py",
+      "validated_source_sha256": "7fea61a9730e69b82ec8ac0ed6683f1e3ed63d10ca6e901fef060b39174c3346",
+      "public_source_sha256": "341b38c9a39f41311160f496a15e678b3d4b7f24239e6a5ba8fd6c503670acdc",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/vendor/__init__.py",
+      "validated_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/vendor/angle_dt.py",
+      "validated_source_sha256": "7d99f8cff37371cfbfe9d4dd36f17a16135fb07f2c6e14add3ad4dd5c0034e2e",
+      "public_source_sha256": "7d99f8cff37371cfbfe9d4dd36f17a16135fb07f2c6e14add3ad4dd5c0034e2e",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/vendor/mamba3_siso_fwd.py",
+      "validated_source_sha256": "bfcf75d9192e0f90ca543eb33a5b5f2b50d92ad2a60f2d5bfab1dc7081b4da33",
+      "public_source_sha256": "bfcf75d9192e0f90ca543eb33a5b5f2b50d92ad2a60f2d5bfab1dc7081b4da33",
+      "ast_equal_ignoring_docstrings": true
+    },
+    {
+      "file": "trifusion_l4/vendor/utils.py",
+      "validated_source_sha256": "9d93fd772c7f256f517e75445261773e469cfeddb8bb76c1f8f16e9feabb3c13",
+      "public_source_sha256": "9d93fd772c7f256f517e75445261773e469cfeddb8bb76c1f8f16e9feabb3c13",
+      "ast_equal_ignoring_docstrings": true
+    }
+  ]
+}
